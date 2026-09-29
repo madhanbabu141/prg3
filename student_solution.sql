@@ -1,5 +1,6 @@
-ALTER TABLE student57
-ADD email VARCHAR(30);
-ALTER TABLE student57
-ADD phoneno INT(10);
-desc student57;
+ALTER TABLE Student
+ADD COLUMN student57Name VARCHAR(20) NOT NULL;
+
+ALTER TABLE Student
+ADD CONSTRAINT UQ_student57Name
+UNIQUE (student57Name);
